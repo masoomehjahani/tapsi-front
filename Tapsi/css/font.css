@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "sans";
+  font-weight: 400;
+  font-style: normal;
+  src: url("/Tapsi/assets/fonts/Sans\ a4fran3.woff") format("woff");
+}
+@font-face {
+  font-family: "sans";
+  font-weight: 700;
+  font-style: normal;
+  src: url("/Tapsi/assets/fonts/Sans\ a4fran3.woff") format("woff");
+}
+
+body,
+button {
+  font-family: "sans";
+}

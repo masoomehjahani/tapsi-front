@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Tapsi demo</title>
+</head>
+<body>
+<header class="main-header">
+      <nav class="nav container">
+        <a href="#">
+           <img src="./assets/images/Tapsi-passenger.svg" alt="">
+        </a> 
+        <div class="nav__toggler">
+           <div class="bar bar-one"></div>
+           <div class="bar bar-two"></div>
+           <div class="bar bar-three"></div>
+        </div>
+        <ul class="list nav__list">
+           <li class="nav__item"><a href="">پشتیبانی</a></li>
+           <li class="nav__item"><a href="">خدمات کسب و کارها</a></li>
+           <li class="nav__item"><a href="">قرصت های شغلی</a></li>
+           <li class="nav__item"><a href="">وبلاگ</a></li>
+           <li class="nav__item cta">
+              <a href="#" class="btn btn--block btn--primary">دانلود تپسی</a>
+           </li>
+         </ul>
+      </nav>
+</header>
+<section> 
+      <picture class="hero-sction">
+         <source srcset="https://tapsi.ir/images/home/banner.webp" type="image/webp" media="(min-width: 768px)">
+         <source srcset="https://tapsi.ir/images/home/banner.jpg" type="image/jpg" media="(min-width: 768px)">
+         <source srcset="https://tapsi.ir/images/home/banner-mobile.webp" type="image/webp" media="(max-width: 768px)">
+         <source srcset="https://tapsi.ir/images/home/banner-mobile.jpg" type="image/jpg" media="(max-width: 768px)">
+         <img alt="banner" src="https://tapsi.ir/images/home/banner.jpg" class="banner-img">
+      </picture>
+      <div class="hero-wrapper container">
+      <div class="intro-btn">
+         <h1>تپسی</h1>
+         <h2>اپلیکیشن درخواست خودرو و پیک</h2>
+       <div class="intro-wrapper">
+         <div class="intro-btn__passanger pass">
+            <span class="intro-icon">
+               <i class="fas fa-download"></i>
+            </span>
+          <p>دانلود اپلیکیشن مسافران </p>
+         </div>
+         <div class="intro-btn__passanger pass">
+            <span>
+               <i class="fas fa-paw"></i>
+            </span>
+            <p> وب اپلیکیشن مسافران</p>
+         </div>
+         <div class="intro-btn__passanger">
+            <span>
+               <i class="fas fa-download"></i>
+            </span>
+          <p> دانلود اپلیکیشن رانندگان</p> 
+         </div>
+         <div class="intro-btn__passanger car">
+            <span>
+               <i class="fas fa-car"></i>
+            </span>
+           <p> ثبت نام راننده</p>
+         </div>
+      </div>
+      </div>
+   </div>
+</section>
+
+<section class="services container">
+      <h2 class="services__header">سرویس های تپسی</h2>
+      <div class="services__tabs">
+            <a class="tab active" data-tab-target="nav-classic-tab" >
+               <img src="https://tapsi.ir/images/home/cc-classic.png" alt="tapsi-classic-icon">
+               <p>تپسی کلاسیک</p>
+            </a>
+            <a class="tab" data-tab-target="nav-motopeyk-tab" >
+               <img src="https://tapsi.ir/images/home/cc-motopeyk.png" alt="motopeyk-icon">
+               <p>موتوپیک</p>
+            </a>
+            <a class="tab" data-tab-target="nav-autopeyk-tab" >
+               <img src="https://tapsi.ir/images/home/cc-autopeyk.png" alt="autopeyk-icon">
+               <p>اتوپیک</p>
+            </a>
+            <a class="tab" data-tab-target="nav-plus-tab" >
+               <img src="https://tapsi.ir/images/home/cc-plus.png" alt="tapsi-plus-icon">
+               <p>تپسی پلاس</p>
+            </a>
+            <a class="tab" data-tab-target="nav-tel-tab" >
+               <img src="https://tapsi.ir/images/home/cc-tel.png" alt="tapsi-tel-icon">
+               <p>تپسی تلفنی</p>
+            </a>
+            <a class="tab" data-tab-target="nav-hamyar-tab" >
+               <img src="https://tapsi.ir/images/home/cc-hamyar.png" alt="hamyar-icon">
+               <p>همیار</p>
+            </a>
+            <a class="tab" data-tab-target="nav-hamkhat-tab" >
+               <img src="https://tapsi.ir/images/home/cc-hamkhat.png" alt="hamkhat-icon">
+               <p>هم&zwnj;خط</p>
+            </a>
+            <a class="tab" data-tab-target="nav-taxi-tab" >
+               <img src="https://tapsi.ir/images/home/cc-taxi.png" alt="tapsi-taxi-icon">
+               <p>تاکسی</p>
+            </a>
+            <a class="tab " data-tab-target="nav-line-tab" >
+               <img src="https://tapsi.ir/images/home/cc-line.png" alt="tapsi-line-icon">
+               <p>تپسی لاین</p>
+            </a>
+      </div>
+      <div class=" container">
+         <div class="tab-content active" id="nav-classic-tab">
+         <div class="feature__img">
+            <img src="https://tapsi.ir/images/home/cc-classic.png" alt="tapsi-classic-icon" >
+         </div>
+          <div class="feature__detail">
+            <h3 class="feature__header">تپسی کلاسیک  </h3> 
+            <p class="feature__text">
+               در سرویس پلاس تاکسی ایران بهترین خدمات تاکسیرانی
+               - جهت اراپه به هموظنان عزیز وجود دارد. با تشکر ثبت نام جهت استفاده از سرویس ما را در خدمات 
+               بهتر یاری میفرماید
+            </p>
+          </div>
+         </div>
+         <div class="tab-content" id="nav-motopeyk-tab">
+          <div class="feature__img">
+            <img src="https://tapsi.ir/images/home/cc-motopeyk.png" alt="motopeyk-icon" >
+         </div>
+          <div class="feature__detail">
+            <h3 class="feature__header">موتوپیک</h3> 
+            <p class="feature__text">
+               در سرویس پلاس تاکسی ایران بهترین خدمات تاکسیرانی
+               - جهت اراپه به هموظنان عزیز وجود دارد. با تشکر ثبت نام جهت استفاده از سرویس ما را در خدمات 
+               بهتر یاری میفرماید
+            </p>
+          </div>
+         </div>
+          <div class="tab-content" id="nav-autopeyk-tab">
+            <div class="feature__img">
+               <img src="https://tapsi.ir/images/home/cc-autopeyk.png" alt="autopeyk-icon">
+            </div>
+             <div class="feature__detail">
+               <h3 class="feature__header">اتوپیک</h3> 
+               <p class="feature__text">
+                  در سرویس پلاس تاکسی ایران بهترین خدمات تاکسیرانی
+                  - جهت اراپه به هموظنان عزیز وجود دارد. با تشکر ثبت نام جهت استفاده از سرویس ما را در خدمات 
+                  بهتر یاری میفرماید
+               </p>
+             </div>
+          </div>
+          <div class="tab-content" id="nav-plus-tab">
+            <div class="feature__img">
+               <img src="https://tapsi.ir/images/home/cc-plus.png" alt="tapsi-plus-icon">
+            </div>
+             <div class="feature__detail">
+               <h3 class="feature__header">تپسی پلاس</h3> 
+               <p class="feature__text">
+                  در سرویس پلاس تاکسی ایران بهترین خدمات تاکسیرانی
+                  - جهت اراپه به هموظنان عزیز وجود دارد. با تشکر ثبت نام جهت استفاده از سرویس ما را در خدمات 
+                  بهتر یاری میفرماید
+               </p>
+             </div>
+         </div>
+         <div class="tab-content" id="nav-tel-tab">
+            <div class="feature__img">
+               <img src="https://tapsi.ir/images/home/cc-tel.png" alt="tapsi-tel-icon">
+            </div>
+             <div class="feature__detail">
+               <h3 class="feature__header">تپسی تلفنی</h3> 
+               <p class="feature__text">
+                  در سرویس پلاس تاکسی ایران بهترین خدمات تاکسیرانی
+                  - جهت اراپه به هموظنان عزیز وجود دارد. با تشکر ثبت نام جهت استفاده از سرویس ما را در خدمات 
+                  بهتر یاری میفرماید
+               </p>
+             </div>
+         </div>
+         <div class="tab-content" id="nav-hamyar-tab">
+            <div class="feature__img">
+               <img src="https://tapsi.ir/images/home/cc-hamyar.png" alt="hamyar-icon">
+            </div>
+             <div class="feature__detail">
+               <h3 class="feature__header">تپسی همیار</h3> 
+               <p class="feature__text">
+                  در سرویس پلاس تاکسی ایران بهترین خدمات تاکسیرانی
+                  - جهت اراپه به هموظنان عزیز وجود دارد. با تشکر ثبت نام جهت استفاده از سرویس ما را در خدمات 
+                  بهتر یاری میفرماید
+               </p>
+             </div>
+         </div>
+         <div class="tab-content" id="nav-hamkhat-tab">
+            <div class="feature__img">
+               <img src="https://tapsi.ir/images/home/cc-hamkhat.png" alt="hamkhat-icon">
+            </div>
+             <div class="feature__detail">
+               <h3 class="feature__header">هم خط</h3> 
+               <p class="feature__text">
+                  در سرویس پلاس تاکسی ایران بهترین خدمات تاکسیرانی
+                  - جهت اراپه به هموظنان عزیز وجود دارد. با تشکر ثبت نام جهت استفاده از سرویس ما را در خدمات 
+                  بهتر یاری میفرماید
+               </p>
+             </div>
+         </div>
+         <div class="tab-content" id="nav-taxi-tab">
+            <div class="feature__img">
+               <img src="https://tapsi.ir/images/home/cc-taxi.png" alt="tapsi-taxi-icon">
+            </div>
+             <div class="feature__detail">
+               <h3 class="feature__header">تاکسی</h3> 
+               <p class="feature__text">
+                  در سرویس پلاس تاکسی ایران بهترین خدمات تاکسیرانی
+                  - جهت اراپه به هموظنان عزیز وجود دارد. با تشکر ثبت نام جهت استفاده از سرویس ما را در خدمات 
+                  بهتر یاری میفرماید
+               </p>
+             </div>
+         </div>
+         <div class="tab-content" id="nav-line-tab">
+            <div class="feature__img">
+               <img src="https://tapsi.ir/images/home/cc-line.png" alt="tapsi-line-icon">
+            </div>
+             <div class="feature__detail">
+               <h3 class="feature__header">تپسی لاین</h3> 
+               <p class="feature__text">
+                  در سرویس پلاس تاکسی ایران بهترین خدمات تاکسیرانی
+                  - جهت اراپه به هموظنان عزیز وجود دارد. با تشکر ثبت نام جهت استفاده از سرویس ما را در خدمات 
+                  بهتر یاری میفرماید
+               </p>
+             </div>
+         </div>
+       </div>
+</section>
+<section class="feature container">
+   <div class="feature__img">
+      <img src="./assets/images/lbp.jpg" alt="desctop" >
+   </div>
+    <div class="feature__detail">
+      <h2 class="feature__header">خدمات تپسی برای کسب و کارها</h2> 
+      <p class="feature__text">
+         در سرویس پلاس تاکسی ایران بهترین خدمات تاکسیرانی
+         - جهت اراپه به هموظنان عزیز وجود دارد. با تشکر ثبت نام جهت استفاده از سرویس ما را در خدمات 
+         بهتر یاری میفرماید
+      </p>
+      <button class="btn btn--primary">ورود و ثبت نام پنل سازمانی</button>
+    </div>
+</section>
+</section>
+<section class="discount container">
+  <div class="discount__img">
+     <img src="./assets/images/lp.jpg" alt="desctop" >
+  </div>
+   <div class="discount__detail">
+     <h2 class="discount__header">خرید کد اعتباری تپسی</h2> 
+     <p class="discount__text">
+        در سرویس پلاس تاکسی ایران بهترین خدمات تاکسیرانی
+        - جهت اراپه به هموظنان عزیز وجود دارد. با تشکر ثبت نام جهت استفاده از سرویس ما را در خدمات 
+        بهتر یاری میفرماید
+     </p>
+     <button class="btn btn--primary">خرید کد اعتبار و تخفیف</button>
+   </div>
+</section>
+<section class="container ">
+   <h2 class="block__heading">تعرفه های مشتریان</h2>
+   <div class="block-plan">
+   <div class="plan">
+      <div class="card card--secondary">
+       <header class="card__header">
+     <span class="plan__intrudoction">
+        <span class="plan__name">عادی</span>
+        <span class="badge ">10% off</span>
+     </span>  
+        <span class="plan__price">290,000</span>
+        <span class="plan__billing-cycle">ماهانه/تومان</span>
+        <span class="plan__description">سرویس ماشین های معمولی</span>
+       </header>
+       <di class="card__body">
+         <ul class="list list--tick" >
+            <li class="list__item">کیفیت معمولی</li>
+            <li class="list__item">کیفیت معمولی</li>
+            <li class="list__item">کیفیت معمولی</li>
+            <li class="list__item">کیفیت معمولی</li>
+        </ul>
+        <button class="btn btn--secodary btn--block">ثبت سفارش</button>
+       </di>
+      </div>
+   </div>
+        <div class="plan plan--popular">
+            <div class="card card--primary">
+             <header class="card__header">
+           <span class="plan__intrudoction">
+              <span class="plan__name">اقتصادی</span>
+              <span class="badge badge--primary">15% off</span>
+           </span>  
+              <span class="plan__price">390,000</span>
+              <span class="plan__billing-cycle">ماهانه/تومان</span>
+              <span class="plan__description">سرویس ماشین های کلاسیک</span>
+             </header>
+             <di class="card__body">
+               <ul class="list list--tick" >
+                  <li class="list__item">کیفیت معمولی</li>
+                  <li class="list__item">کیفیت معمولی</li>
+                  <li class="list__item">کیفیت معمولی</li>
+                  <li class="list__item">کیفیت معمولی</li>
+              </ul>
+              <button class="btn btn--primary btn--block">ثبت سفارش</button>
+             </di>
+            </div>
+        </div>
+        <div class="plan">
+           <div class="card card--secondary">
+            <header class="card__header">
+          <span class="plan__intrudoction">
+             <span class="plan__name">ویژه</span>
+             <span class="badge ">20% off</span>
+          </span>  
+             <span class="plan__price">490,000</span>
+             <span class="plan__billing-cycle">ماهانه/تومان</span>
+             <span class="plan__description">سرویس ماشین های مدل بالا</span>
+            </header>
+            <di class="card__body">
+               <ul class="list list--tick" >
+                  <li class="list__item">کیفیت معمولی</li>
+                  <li class="list__item">کیفیت معمولی</li>
+                  <li class="list__item">کیفیت معمولی</li>
+                  <li class="list__item">کیفیت معمولی</li>
+              </ul>
+              <button class="btn btn--secodary btn--block">ثبت سفارش</button>
+            </di>
+           </div>
+       </div>
+      </div>
+</section>
+<section class=" travell container ">
+   <h3 class="block__heading">جوایز ویژه</h3>
+ <div class="travell__slides">
+   <div class="travell__slide">
+    <div class="slide__img">
+       <img src="./assets/images/image-car.jpg" alt="">
+    </div>
+    <div class="slide__detail">
+    <div class="slide__header">
+       <span class="badge badge--primary">ویژه</span>
+       <p>سفر ۳ روزه &bull; اقامت رایگان</p>
+    </div>
+    <p class="slide__title">سفر به قلب کویر</p>
+    <div class="slide__icons">
+      <div>
+        <i class="fas fa-heart"></i>
+        <span>12</span>
+        <i class="fas fa-eye"></i>
+        <span>24</span>
+      </div>
+      <div>
+        <i class="fas fa-edit"></i>
+        <i class="fas fa-trash"></i>
+      </div>
+     </div>
+     <div class="avatar-group">
+      <div class="avatar">
+       <img src="./assets/images/p1.jpg" alt="">
+      </div>
+      <div class="avatar">
+       <img src="./assets/images/p2.jpg" alt="">
+      </div>
+      <div class="avatar">
+       <img src="./assets/images/p3.jpg" alt="">
+      </div>
+      <div class="hidden-avatars">+10</div>
+      <span class="slide__suggest">پیشنهادها</span>
+   </div> 
+   </div>
+   </div>
+   <div class="travell__slide">
+      <div class="slide__img">
+         <img src="./assets/images/image-car.jpg" alt="">
+      </div>
+      <div class="slide__detail">
+      <div class="slide__header">
+         <span class="badge badge--primary">ویژه</span>
+         <p>سفر ۳ روزه &bull; اقامت رایگان</p>
+      </div>
+      <p class="slide__title">سفر به قلب کویر</p>
+      <div class="slide__icons">
+       <div>
+         <i class="fas fa-heart"></i>
+         <span>12</span>
+         <i class="fas fa-eye"></i>
+         <span>24</span>
+       </div>
+       <div>
+         <i class="fas fa-edit"></i>
+         <i class="fas fa-trash"></i>
+       </div>
+      </div>
+      <div class="avatar-group">
+         <div class="avatar">
+          <img src="./assets/images/p1.jpg" alt="">
+         </div>
+         <div class="avatar">
+          <img src="./assets/images/p2.jpg" alt="">
+         </div>
+         <div class="avatar">
+          <img src="./assets/images/p3.jpg" alt="">
+         </div>
+         <div class="hidden-avatars">+10</div>
+         <span class="slide__suggest">پیشنهادها</span>
+      </div> 
+   </div>
+   </div>
+   <div class="travell__slide">
+      <div class="slide__img">
+         <img src="./assets/images/image-car.jpg" alt="">
+      </div>
+      <div class="slide__detail">
+      <div class="slide__header">
+         <span class="badge badge--primary">ویژه</span>
+         <p>سفر ۳ روزه &bull; اقامت رایگان</p>
+      </div>
+      <p class="slide__title">سفر به قلب کویر</p>
+      <div class="slide__icons">
+         <div>
+           <i class="fas fa-heart"></i>
+           <span>12</span>
+           <i class="fas fa-eye"></i>
+           <span>24</span>
+         </div>
+         <div>
+           <i class="fas fa-edit"></i>
+           <i class="fas fa-trash"></i>
+         </div>
+        </div>
+        <div class="avatar-group">
+         <div class="avatar">
+          <img src="./assets/images/p1.jpg" alt="">
+         </div>
+         <div class="avatar">
+          <img src="./assets/images/p2.jpg" alt="">
+         </div>
+         <div class="avatar">
+          <img src="./assets/images/p3.jpg" alt="">
+         </div>
+         <div class="hidden-avatars">+10</div>
+         <span class="slide__suggest">پیشنهادها</span>
+      </div> 
+   </div>
+   </div>
+   <div class="travell__slide">
+      <div class="slide__img">
+         <img src="./assets/images/image-car.jpg" alt="">
+      </div>
+      <div class="slide__detail">
+      <div class="slide__header">
+         <span class="badge badge--primary">ویژه</span>
+         <p>سفر ۳ روزه &bull; اقامت رایگان</p>
+      </div>
+      <p class="slide__title">سفر به قلب کویر</p>
+      <div class="slide__icons">
+         <div>
+           <i class="fas fa-heart"></i>
+           <span>12</span>
+           <i class="fas fa-eye"></i>
+           <span>24</span>
+         </div>
+         <div>
+           <i class="fas fa-edit"></i>
+           <i class="fas fa-trash"></i>
+         </div>
+        </div>
+        <div class="avatar-group">
+           <div class="avatar">
+            <img src="./assets/images/p1.jpg" alt="">
+           </div>
+           <div class="avatar">
+            <img src="./assets/images/p2.jpg" alt="">
+           </div>
+           <div class="avatar">
+            <img src="./assets/images/p3.jpg" alt="">
+           </div>
+           <div class="hidden-avatars">+10</div>
+           <span class="slide__suggest">پیشنهادها</span>
+        </div> 
+   </div>
+   </div>
+ </div>
+</section>
+<section class="container ">
+<div class="accordion__wrapper">
+<div class="accordion__intro">
+   <h2 class="accordion__head">رزومه و سوابق</h2>
+   <span>
+      <span>ویرایش</span>
+      <span>
+         <i class="fas fa-edit"></i>
+      </span>
+   </span>
+</div>
+<div class="accordion">
+<header class="accordion__header">
+<h2 class="accordion__head">سوابق تحصیلی</h2>
+<div class="icon">
+   <i class="fas fa-chevron-circle-left"></i>
+</div>
+</header>
+<div class="accordion__content">
+   <p>
+   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+    Beatae unde, nisi id fuga rerum obcaecati, ullam quo ipsam 
+    ipsa aliquam veniam 
+   at nulla officia, sint temporibus! Vel ducimus numquam minus.
+</p>
+</div>
+</div>
+<div class="accordion">
+   <header class="accordion__header">
+   <h2 class="accordion__head">سوابق کاری</h2>
+   <div class="icon">
+      <i class="fas fa-chevron-circle-left"></i>
+   </div>
+   </header>
+   <div class="accordion__content">
+      <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+       Beatae unde, nisi id fuga rerum obcaecati, ullam quo ipsam 
+       ipsa aliquam veniam 
+      at nulla officia, sint temporibus! Vel ducimus numquam minus.
+      </p>
+   </div>
+   </div>
+</div>
+</section>
+<section class="container">
+<div class="select-type">
+   <div class="select-control">
+      <input type="radio" name="webinar" id="type-A">
+    <label for="type-A">عمومی</label>
+   </div>
+   <div class="select-control">
+      <input type="radio" name="webinar" id="type-B">
+      <label for="type-B">اختصاصی</label>
+   </div>
+</div>
+</section>
+<section class="contact container">
+<div class="contact__intro">
+   <h2  class="contact__header">ارتباط با ما</h2>
+   <p class="contact__text">
+      شما میتوانید نظرات و انتقادات خود 
+      را برای ما ارسال نمایید.
+   </p>
+</div>
+<div class="contact__social">
+   <span class="icon-container">
+      <svg class="icon">
+        <use xlink:href="./assets/images/svg-sprit.svg#twitter"></use>
+      </svg>
+     </span>
+     <span class="icon-container">
+      <svg class="icon">
+        <use xlink:href="./assets/images/svg-sprit.svg#linkedin"></use>
+      </svg>
+     </span>
+     <span class="icon-container">
+      <svg class="icon">
+        <use xlink:href="./assets/images/svg-sprit.svg#facebook"></use>
+      </svg>
+     </span>
+</div>
+<div class="contact__icons">
+   <div class="icon__holder">
+      <span class="icon-holder__label">ایران-تهران-دیباجی-پلاک۴</span>
+      <span class="icon-container">
+         <svg class="icon">
+         <use xlink:href="./assets/images/svg-sprit.svg#placeholde"></use>
+       </svg>
+      </span>
+   </div>
+   <div class="icon__holder">
+      <span class="icon-holder__label">0989126785432</span>
+      <span class="icon-container">
+       <svg class="icon">
+         <use xlink:href="./assets/images/svg-sprit.svg#phone"></use>
+       </svg>
+      </span>
+   </div>
+   <div class="icon__holder">
+      <span class="icon-holder__label">info@gmail.com</span>
+      <span class="icon-container"> 
+        <svg class="icon">
+         <use xlink:href="./assets/images/svg-sprit.svg#mail"></use>
+        </svg>
+      </span>
+   </div>
+</div>
+<div class="contact__map">
+<img src="./assets/images/pic-map.jpg" alt="">
+</div>
+<div class="contact__form">
+  <div class="form-wrapper"> 
+   <h3>نظرات شما</h3>
+ <form >
+   <input type="text" placeholder="نام و نام خانوادگی">
+   <input type="email" placeholder="ایمیل" dir="ltr">
+   <textarea  cols="30" rows="10"></textarea>
+   <button type="submit" class="btn btn--primary">ارسال</button>
+ </form>
+</div>
+</div>
+</section>
+<footer class="main-footer">
+<div class="container footer">
+<div class="footer__item">
+<h6>تپسی</h6>
+<h6>اپلیکیشن درخواست خودرو</h6>
+<h6>تمام حقوق مادی و معنوی متعلق به تپسی است</h6>
+</div>
+<div class="footer__item"  >
+   <h6>تپسی</h6>
+   <a href="">وبلاگ تپسی</a>
+   <a href="">فرصت شغلی</a>
+   <a href="">تماس با ما</a>
+</div>
+<div class="footer__item"  >
+   <h6>مسافران</h6>
+   <a href="">دانلود اپلیکیشن</a>
+   <a href="">سوالات متداول مسافران و رانندگان</a>
+   <a href="">تماس با ما</a>
+</div>
+<div class="footer__item" >
+   <h6>رانندگان</h6>
+   <a href="">وبلاگ تپسی</a>
+   <a href="">فرصت شغلی</a>
+   <a href="">تماس با ما</a>
+</div>
+<div class="footer__item"  >
+   <h6>کسب و کار ها</h6>
+   <a href="">وبلاگ تپسی</a>
+   <a href="">فرصت شغلی</a>
+   <a href="">تماس با ما</a></div>
+<div class="footer__item enemad" >
+   <div class="footer__enemad">
+   <img src="./assets/images/enemad.jpg" alt="">
+   </div>
+   <div class="footer__enemad">
+      <img src="./assets/images/enemad.jpg" alt="">
+   </div>
+   <div class="footer__enemad">
+       <img src="./assets/images/enemad.jpg" alt="">
+   </div>
+  </div>
+</div>
+</footer> 
+<script src="./js/main.js"></script>
+</body>
+</html>
