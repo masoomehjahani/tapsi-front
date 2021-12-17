@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>shopping cart</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-center">
+        <span class="menu-icon">
+          <i class="fas fa-bars"></i>
+        </span>
+        <p class="nav-title">my shopping center</p>
+        <span class="cart-btn">
+            <i class="fas fa-cart-plus"></i>
+            <span class="cart-items">0</span>
+        </span>
+        </div>
+    </nav>
+    <!-- products -->
+    <section>
+        <div class="products">
+            <h2 class="section-title">our products</h2>
+             <!-- single products -->
+          <div class="products-center">
+            <!-- <div class="product">
+                <div class="img-container">
+                    <img class="product-img" src="./assets/images/pro1.jpg" alt="p-1">
+                </div>
+                <div class="product-desc">
+                <p class="product-price">14.9</p>
+                <p class="product-title">product-title</p>
+                </div>
+                <button class="btn btn__primary btn__add">
+                     <i class="fas fa-shopping-cart"></i>
+                </button>
+            </div> -->
+         </div>
+        </div>
+    </section>
+    <div class="backdrop"></div>
+    <section class="modal-container">
+    <div class="cart">
+       <div class="cart-header">
+           <h2>your cart</h2>
+       </div> 
+       <div class="cart-content">
+        <!-- <div class="cart-item">
+       <div> <img  class="cart-product-img"src="./assets/images/pro6.jpg" alt="p-1"> </div> 
+        <div class="cart-product">
+            <p class="cart-product-name">product name</p>
+            <p class="cart-product-price">12.8 $</p>
+        </div>
+        <div class="counter">
+            <i class="fa fa-angle-up" aria-hidden="true"></i>
+           <p class="cart-count">1</p>
+            <i class="fa fa-angle-down" aria-hidden="true"></i>
+        </div>
+        <div>
+            <i class="fa fa-trash"></i>
+        </div>
+       </div> -->
+       </div>
+       <div class="cart-button">
+        <div class="button-price">
+        <!-- <p>total price: </p> -->
+        <p class="cart-total"></p>
+        </div>
+        <button class="clear btn btn__secodary">clear cart</button>
+        <button class="confirm btn btn__primary">confirm</button>
+       </div>
+    </div>
+</section>
+<script type="module" src="./app.js"></script>
+</body>
+</html>
