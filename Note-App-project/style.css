@@ -1,0 +1,157 @@
+@import url("./assets/fonts/fonts.css");
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  /* borde-box => by padding , size element dont change */
+  box-sizing: border-box;
+}
+
+/* VARIABLES */
+:root {
+  --primaryColor: #6d28d9;
+  --secondaryColor: #ede9fe;
+  --mainWhite: #fff;
+  --mainBlack: #222;
+  --mainGrey: #7c7c7c;
+  --mainRed: #db2777;
+  --bodyColor: #f6f6f6;
+  --mainSpacing: 0.1rem;
+  --mainTransition: all 0.5s ease-out;
+  --maxWidth: 1170px;
+  --borderRadius: 7px;
+}
+body {
+  font-family: "sans";
+  color: var(--mainBlack);
+  background-color: var(--bodyColor);
+  position: relative;
+  direction: rtl;
+}
+
+.notes {
+  display: flex;
+}
+.notes__sidebar {
+  background-color: #fff;
+  height: 100vh;
+  width: 250px;
+  position: sticky;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  border-radius: 100px 0 0;
+  background: linear-gradient(180deg, #324467, #283142);
+  transition: var(--mainTransition);
+}
+.note__logo {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-size: 2rem;
+  font-weight: 800;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+}
+.note__list {
+  flex-grow: 1;
+  overflow-y: auto;
+  margin-top: 1rem;
+}
+.note__list ::-webkit-scrollbar {
+  display: none;
+}
+.note__list-item {
+  margin: 15px 0;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+.note__list-item--selected {
+  font-weight: bold;
+  border-radius: var(--borderRadius);
+  background-color: #cccccc;
+  color: #7c7c7c;
+}
+.note__smal-title,
+.note__smal-update {
+  padding: 10px;
+}
+.note__smal-title {
+  font-size: 1.2em;
+}
+.note__smal-body {
+  padding: 0 10px;
+}
+.note__smal-update {
+  color: #aaaaaa;
+  font-style: italic;
+  text-align: left;
+}
+
+.note__add {
+  background-color: #009578;
+  border: none;
+  color: var(--secondaryColor);
+  border-radius: var(--borderRadius);
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 1em;
+  padding: 0.75em 0;
+  width: 100%;
+  transition: var(--mainTransition);
+  cursor: pointer;
+}
+.note__add:hover {
+  background-color: #00af8c;
+}
+.icon-container {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* notes preview section: */
+.notes__preview {
+  display: flex;
+  flex-direction: column;
+  padding: 2em 3em;
+  flex-grow: 1;
+}
+.notes__title,
+.notes__body {
+  border: none;
+  outline: none;
+  width: 100%;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+}
+.notes__title {
+  font-size: 3em;
+  font-weight: bold;
+}
+.notes__body {
+  flex-grow: 1;
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin-top: 2em;
+  resize: none;
+}
+.note__item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.note__list-trash {
+  width: 35px;
+  height: 35px;
+  color: var(--mainRed);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 100%;
+}
